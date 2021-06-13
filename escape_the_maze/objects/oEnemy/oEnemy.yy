@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sPlayer2",
-    "path": "sprites/sPlayer2/sPlayer2.yy",
+    "name": "sEnemy",
+    "path": "sprites/sEnemy/sEnemy.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,9 +21,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oCoin","path":"objects/oCoin/oCoin.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -32,7 +31,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oPlayer",
+  "name": "oEnemy",
   "tags": [],
   "resourceType": "GMObject",
 }

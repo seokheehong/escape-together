@@ -11,9 +11,9 @@ hsp = horiz * walksp;
 vsp = vert * walksp;
 
 ///horizontal collides with walls
-if (place_meeting(x+hsp,y,oWall2))
+if (place_meeting(x+hsp,y,oWall))
 {
-	while (!place_meeting(x+sign(hsp),y,oWall2))
+	while (!place_meeting(x+sign(hsp),y,oWall))
 	{
 		x = x + sign(hsp);
 		}
@@ -21,13 +21,26 @@ if (place_meeting(x+hsp,y,oWall2))
 }
 x = x + hsp;
 
-//vertical collides with walls
-if (place_meeting(x,y+vsp,oWall2))
+//vertical collides with Walls
+if (place_meeting(x,y+vsp,oWall))
 {
-	while (!place_meeting(x,y+sign(vsp),oWall2))
+	while (!place_meeting(x,y+sign(vsp),oWall))
 	{
 		y = y + sign(vsp);
 		}
 		vsp = 0;
 }
 y = y + vsp;
+
+
+///horizontal collides with enemy
+if (place_meeting(x+hsp,y,oEnemy))
+{
+	game_restart();
+}
+
+///vertical collides with enemy
+if (place_meeting(x,y+vsp,oEnemy))
+{
+	game_restart();
+}

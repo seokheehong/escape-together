@@ -1,5 +1,6 @@
 ///setup grid and distribute coins and turrets
 
+/*
 randomize();
 
 //dimensions of each grid tile
@@ -25,4 +26,4 @@ for (aa = 0; aa < gWidth; aa++) {
 	}
 }
 
-	
+*/
